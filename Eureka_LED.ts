@@ -41,11 +41,6 @@ namespace natumi_blocks {
     export function eureka_buz_set() {
     pins.analogSetPitchPin(AnalogPin.P8);
     }
-
- 
- 
- 
- 
  
   //% color="#ff7b00" weight=17 blockId=eureka_white block="LEDライト |%mode| まち時間|%LED_time|秒 ポート|%pin|" group="1_たん体ＬＥＤ"
   export function eureka_white( mode: onoff , LED_time:number , port:eureka_IO) {
@@ -62,15 +57,23 @@ namespace natumi_blocks {
         }
       case eureka_IO.Bﾎﾟｰﾄ:
         if (mode == onoff.ON) {
-          return pins.digitalWritePin(DigitalPin.P1, 1);
+            pins.digitalWritePin(DigitalPin.P1, 1);
+            basic.pause(LED_time*1000);
+        return
         } else {
-          return pins.digitalWritePin(DigitalPin.P1, 0);
+            pins.digitalWritePin(DigitalPin.P1, 0);
+            basic.pause(LED_time*1000);
+        return
         }
       case eureka_IO.Cﾎﾟｰﾄ:
         if (mode == onoff.ON) {
-          return pins.digitalWritePin(DigitalPin.P2, 1);
+            pins.digitalWritePin(DigitalPin.P2, 1);
+            basic.pause(LED_time*1000);
+        return
         } else {
-          return pins.digitalWritePin(DigitalPin.P2, 0);
+            pins.digitalWritePin(DigitalPin.P2, 0);
+            basic.pause(LED_time*1000);
+        return
         }
     }
   }
