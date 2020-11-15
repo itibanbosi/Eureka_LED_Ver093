@@ -65,7 +65,6 @@ function pause(ms: number): void {
         return
         } else {
             pins.digitalWritePin(DigitalPin.P0, 0);
-            pins.digitalWritePin(DigitalPin.P0, 1);
             basic.pause(LED_time*1000);
         return
         }
