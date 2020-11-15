@@ -48,7 +48,7 @@ namespace natumi_blocks {
  
  
   //% color="#ff7b00" weight=17 blockId=eureka_white block="LEDライト |%mode| まち時間|%LED_time| ポート|%pin|" group="1_たん体ＬＥＤ"
-  export function eureka_white(port: eureka_IO, mode: onoff , LED_time:number) {
+  export function eureka_white( mode: onoff , LED_time:number , port:eureka_IO) {
     switch (port) {
       case eureka_IO.Aﾎﾟｰﾄ:
         if (mode == onoff.ON) {
