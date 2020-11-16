@@ -29,14 +29,10 @@ enum LED_color {
     白,
 }
 enum LED_t {
-    //% block="0.2"
-    zero,
-    //% block="0.5"
-    fifteen,
-    //% block="1"
-    thirty,
-    //% block="2"
-    fourty_five
+    //% block="0.2",
+    //% block="0.5",
+    //% block="1",
+    //% block="2",
 }
 
 
