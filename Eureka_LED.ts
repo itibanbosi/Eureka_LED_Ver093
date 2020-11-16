@@ -28,6 +28,18 @@ enum LED_color {
     むらさき,
     白,
 }
+enum LED_t {
+    //% block="0"
+    zero,
+    //% block="15"
+    fifteen,
+    //% block="30"
+    thirty,
+    //% block="45"
+    fourty_five
+}
+
+
 
 //% color="#ff7b00" block="はじめの一歩　V0.93"
 namespace natumi_blocks {
@@ -49,7 +61,7 @@ namespace natumi_blocks {
  */
 
   //% color="#ff7b00" weight=17 blockId=eureka_white block="LEDライト |%mode| まち時間|%LED_time|秒 ポート|%pin|" group="1_たん体ＬＥＤ"
-  export function eureka_white( mode: onoff , LED_time:number , port:eureka_IO) {
+  export function eureka_white( mode: onoff , LED_time:LED_t , port:eureka_IO) {
     switch (port) {
       case eureka_IO.Aﾎﾟｰﾄ:
         if (mode == onoff.ON) {
