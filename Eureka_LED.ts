@@ -28,7 +28,7 @@ enum LED_color {
     むらさき,
     白,
 }
-enum LED_t {
+enum LED_wait {
     //% block="0.2",
     tenni,
     //% block="0.5",
@@ -55,42 +55,37 @@ namespace natumi_blocks {
     }
  
 
-/**
- * eureka_white for the specified time in milliseconds
- * @param LED_time how long to pause for, eg: 100, 200, 500, 1000, 2000
- */
-
   //% color="#ff7b00" weight=17 blockId=eureka_white block="LEDライト |%mode| まち時間|%LED_time|秒 ポート|%pin|" group="1_たん体ＬＥＤ"
-  export function eureka_white( mode: onoff , LED_time:LED_t , port:eureka_IO) {
+  export function eureka_white( mode: onoff , LED_time:LED_wait , port:eureka_IO) {
     switch (port) {
       case eureka_IO.Aﾎﾟｰﾄ:
         if (mode == onoff.ON) {
             pins.digitalWritePin(DigitalPin.P0, 1);
-            basic.pause(LED_time*1000);
+            basic.pause(LED_time*500);
         return
         } else {
             pins.digitalWritePin(DigitalPin.P0, 0);
-            basic.pause(LED_time*1000);
+            basic.pause(LED_time*500);
         return
         }
       case eureka_IO.Bﾎﾟｰﾄ:
         if (mode == onoff.ON) {
             pins.digitalWritePin(DigitalPin.P1, 1);
-            basic.pause(LED_time*1000);
+            basic.pause(LED_time*500);
         return
         } else {
             pins.digitalWritePin(DigitalPin.P1, 0);
-            basic.pause(LED_time*1000);
+            basic.pause(LED_time*500);
         return
         }
       case eureka_IO.Cﾎﾟｰﾄ:
         if (mode == onoff.ON) {
             pins.digitalWritePin(DigitalPin.P2, 1);
-            basic.pause(LED_time*1000);
+            basic.pause(LED_time*500);
         return
         } else {
             pins.digitalWritePin(DigitalPin.P2, 0);
-            basic.pause(LED_time*1000);
+            basic.pause(LED_time*500);
         return
         }
     }
