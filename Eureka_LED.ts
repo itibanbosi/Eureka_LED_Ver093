@@ -30,9 +30,13 @@ enum LED_color {
 }
 enum LED_t {
     //% block="0.2",
+    tenni,
     //% block="0.5",
+    tengo,
     //% block="1",
+    one,
     //% block="2",
+    two
 }
 
 
