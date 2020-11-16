@@ -44,7 +44,7 @@ namespace natumi_blocks {
  
 
 /**
- * Pause for the specified time in milliseconds
+ * eureka_white for the specified time in milliseconds
  * @param LED_time how long to pause for, eg: 100, 200, 500, 1000, 2000
  */
 
