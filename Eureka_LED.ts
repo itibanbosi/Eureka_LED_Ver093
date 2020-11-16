@@ -42,6 +42,12 @@ namespace natumi_blocks {
     pins.analogSetPitchPin(AnalogPin.P8);
     }
  
+
+/**
+ * Pause for the specified time in milliseconds
+ * @param LED_time how long to pause for, eg: 100, 200, 500, 1000, 2000
+ */
+
   //% color="#ff7b00" weight=17 blockId=eureka_white block="LEDライト |%mode| まち時間|%LED_time|秒 ポート|%pin|" group="1_たん体ＬＥＤ"
   export function eureka_white( mode: onoff , LED_time:number , port:eureka_IO) {
     switch (port) {
