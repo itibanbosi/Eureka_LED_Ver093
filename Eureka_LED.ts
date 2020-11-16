@@ -30,9 +30,9 @@ enum LED_color {
 }
 enum LED_wait {
     //% block="0.2",
-    tenni,
+    dot_two,
     //% block="0.5",
-    tengo,
+    dot_five,
     //% block="1",
     one,
     //% block="2",
