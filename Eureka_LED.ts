@@ -103,6 +103,8 @@ namespace natumi_blocks {
     }
   }
 
+
+/*
   //% color="#ff7b00" weight=17 blockId=eureka_white2 block="単体_LED　点めつは|%mode|　ﾎﾟｰﾄ|%pin|" group="1_たん体ＬＥＤ"
   export function eureka_white2(mode: LED_onoff ,port: eureka_IO ) {
     switch (port) {
@@ -116,7 +118,7 @@ namespace natumi_blocks {
         basic.pause(mode);
         return
         }
-/*
+
       case eureka_IO.Bﾎﾟｰﾄ:
         if (mode == onoff.ON) {
           return pins.digitalWritePin(DigitalPin.P1, 1);
@@ -130,7 +132,7 @@ namespace natumi_blocks {
           return pins.digitalWritePin(DigitalPin.P2, 0);
         }
     }
-*/
+
     }
 }
 
@@ -298,11 +300,11 @@ namespace natumi_blocks {
     }
   }
 
-
+*/
 
 
   //% color="#1E90FF" weight=10 block="待ち時間（秒）|%second|" group="機能"
-  //% second.min=0 second.max=10
+
   export function driveForwards(second: number): void {
     basic.pause(second * 1000);
     }
