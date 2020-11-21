@@ -29,15 +29,25 @@ enum LED_color {
     白,
 }
 enum LED_wait {
-    //% block="0.2",
-    dot_two,
+    //% block="0.1",
+    dot_one,
+   //% block="0.3",
+    dot_three,
     //% block="0.5",
     dot_five,
+    //% block="0.8",
+    dot_eight,
     //% block="1",
     one,
-    //% block="2",
-    two
-}
+    //% block="1.3",
+    one_dot_three,
+    //% block="1.5",
+    one_dot_five,
+    //% block="1.8",
+    one_dot_eight,
+   //% block="2",
+    two,
+    }
 
 
 
